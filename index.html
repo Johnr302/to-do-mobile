@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mobile to do app.</title>
+    <link rel="stylesheet" type="text/css" href="to-do-mobile.css" />
+    <script src="to-do-mobile.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="loader">
+      <h1>TO DO LIST</h1>
+      <h2>
+        Stay focused. <br />
+        Get more done.
+      </h2>
+    </section>
+    <header>
+      <div class="container" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <h1>To do app.</h1>
+    </header>
+
+    <section class="list-container">
+      <h2>
+        Stay focused. Get more done.
+      </h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia iure
+        debitis nihil, cupiditate necessitatibus aliquam praesentium fuga
+        dolorum mollitia!
+      </p>
+
+      <form data-new-list-title>
+        <label>
+          Create a list.
+          <input
+            type="text"
+            class="new-list"
+            placeholder="List name"
+            aria-label="List name"
+          />
+        </label>
+
+        <input
+          type="text"
+          class="new-task"
+          placeholder="Task name"
+          aria-label="Task name"
+        />
+      </form>
+      <button
+        class="complete-btn"
+        id="complete-list-btn"
+        aria-label="Complete list"
+      >
+        Complete list
+      </button>
+    </section>
+  </body>
+</html>
