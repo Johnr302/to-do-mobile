@@ -2,6 +2,7 @@ body {
   margin: 0;
   --app-bg-color: #a9f347;
 }
+
 .loader {
   background-color: var(--app-bg-color);
   position: absolute;
@@ -14,20 +15,25 @@ body {
   animation: 2s ease-in 0s normal forwards 1 fadeInLoader;
   z-index: 2;
 }
+
 .loader h1,
 .loader h2 {
   padding-left: 30px;
 }
+
 .loader h1 {
   padding-top: 153px;
   font-size: 68px;
 }
+
 .list-container h2 {
   font-size: 24px;
 }
+
 .list-container p {
   font-size: 14px;
 }
+
 label {
   font-size: 18px;
 }
@@ -41,6 +47,7 @@ label {
     visibility: hidden;
   }
 }
+
 .container,
 h1 {
   display: inline-block;
@@ -49,6 +56,7 @@ h1 {
   font-size: 18px;
   font-weight: 700;
 }
+
 html {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -63,6 +71,7 @@ header {
   top: 0;
   width: 100%; */
 }
+
 .bar1,
 .bar2,
 .bar3 {
@@ -101,9 +110,11 @@ header {
   padding: 10px;
   margin-top: 30px;
 }
+
 .new-list {
   font-size: 24px;
 }
+
 .new-task {
   font-size: 18px;
 }
@@ -111,9 +122,16 @@ header {
 .complete-btn {
   position: absolute;
   bottom: 0;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   font-size: 1.5em;
+  padding: 10px 0;
+  width: 85%;
+  border: solid;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
+
 .list-container {
   width: 70%;
   margin: 30px;
