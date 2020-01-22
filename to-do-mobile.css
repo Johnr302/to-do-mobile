@@ -14,7 +14,12 @@ body {
   animation: 2s ease-in 0s normal forwards 1 fadeInLoader;
   z-index: 2;
 }
+.loader h1,
+.loader h2 {
+  padding-left: 30px;
+}
 .loader h1 {
+  padding-top: 153px;
   font-size: 68px;
 }
 .list-container h2 {
@@ -40,6 +45,8 @@ h1 {
   display: inline-block;
   cursor: pointer;
   padding-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
 }
 html {
   margin: 0;
@@ -58,16 +65,16 @@ header {
 .bar1,
 .bar2,
 .bar3 {
-  width: 35px;
-  height: 5px;
+  width: 18px;
+  height: 2px;
   background-color: #333;
-  margin: 6px 0;
+  margin: 3px 0;
   transition: 0.4s;
 }
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  /* -webkit-transform: rotate(-45deg) translate(-2px, px); */
+  transform: rotate(-45deg) translate(-3px, 2px);
 }
 
 .change .bar2 {
@@ -75,8 +82,8 @@ header {
 }
 
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+  transform: rotate(45deg) translate(-5px, -4px);
 }
 
 .new-task {
@@ -103,8 +110,7 @@ header {
 .complete-btn {
   position: absolute;
   bottom: 0;
-  left: 25%;
-  margin: auto;
+  margin: 0 auto;
   font-size: 1.5em;
 }
 .list-container {
