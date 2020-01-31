@@ -12,7 +12,7 @@ body {
   width: 100%;
   padding: 0;
   font-weight: 100;
-  animation: 2s ease-in 0s normal forwards 1 fadeInLoader;
+  animation: 0.2s ease-in 1.5s normal forwards 1 fadeInLoader;
   z-index: 2;
 }
 
@@ -135,7 +135,8 @@ header {
 
 .list-container {
   width: 70%;
-  margin: 30px;
+  margin-left: 30px;
+  margin-top: 68px;
 }
 
 .menu-btn {
@@ -149,7 +150,9 @@ header {
   width: 100%;
   position: absolute;
   top: 0;
+  left: 0;
   padding-top: 50px;
   padding-left: 22px;
   background-color: white;
+  box-sizing: border-box;
 }
