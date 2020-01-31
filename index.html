@@ -7,16 +7,19 @@
     <title>Mobile to do app.</title>
     <link rel="stylesheet" type="text/css" href="to-do-mobile.css" />
     <script src="to-do-mobile.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <!-- <section class="loader">
+    <section class="loader">
       <h1>TO DO LIST</h1>
       <h2>
-        Stay focused. <br />
+        Stay focused! <br />
         Get more done.
-      </h2> -->
+      </h2>
     </section>
     <header>
       <div class="container" onclick="myFunction(this)">
@@ -61,6 +64,38 @@
         aria-label="Complete list"
       >
         Complete list
+      </button>
+    </section>
+    <section id="menu">
+      <button
+        class="menu-btn"
+        id="dark-mode"
+        aria-label="dark mode"
+        type="button"
+      >
+        Dark Mode
+      </button>
+
+      <button class="menu-btn" id="my-list" aria-label="My Lists" type="button">
+        My List
+      </button>
+
+      <button
+        class="menu-btn"
+        id="complete"
+        aria-label="Completed"
+        type="button"
+      >
+        Complete
+      </button>
+
+      <button
+        class="menu-btn"
+        id="progress"
+        aria-label="progress"
+        type="button"
+      >
+        Progress
       </button>
     </section>
   </body>
