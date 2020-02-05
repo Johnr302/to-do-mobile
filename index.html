@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mobile to do app.</title>
     <link rel="stylesheet" type="text/css" href="to-do-mobile.css" />
-    <script src="to-do-mobile.js"></script>
+    <script defer src="to-do-mobile.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
       rel="stylesheet"
@@ -40,7 +40,7 @@
         dolorum mollitia!
       </p>
 
-      <form data-new-list-title>
+      <form data-new-list-form>
         <label>
           Create a list.
           <input
@@ -48,16 +48,24 @@
             class="new-list"
             placeholder="List name"
             aria-label="List name"
+            data-new-list-input
           />
+          <ul class="list-title" data-lists></ul>
         </label>
-
-        <input
-          type="text"
-          class="new-task"
-          placeholder="Task name"
-          aria-label="Task name"
-        />
       </form>
+
+      <section class="task" data-list-display-container>
+        <form action="" data-new-task-form>
+          <input
+            type="text"
+            class="new-task"
+            placeholder="Task name"
+            aria-label="Task name"
+            data-new-task-input
+          />
+          <ul class="todo-task" data-tasks></ul>
+        </form>
+      </section>
       <button
         class="complete-btn"
         id="complete-list-btn"
@@ -98,5 +106,11 @@
         Progress
       </button>
     </section>
+    <template id="tasks-template">
+      <li class="items">
+        <input type="checkbox" />
+        <label> </label>
+      </li>
+    </template>
   </body>
 </html>

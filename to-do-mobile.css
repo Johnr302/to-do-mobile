@@ -16,6 +16,10 @@ body {
   z-index: 2;
 }
 
+.active-list {
+  text-decoration: underline;
+}
+
 .loader h1,
 .loader h2 {
   padding-left: 30px;
@@ -143,6 +147,7 @@ header {
   display: block;
   margin-top: 25px;
   font-size: 18px;
+  z-index: -2;
 }
 
 #menu {
@@ -155,4 +160,8 @@ header {
   padding-left: 22px;
   background-color: white;
   box-sizing: border-box;
+  z-index: -1;
+}
+ul {
+  list-style-type: none;
 }
