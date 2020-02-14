@@ -6,13 +6,16 @@ const newTaskInput = document.querySelector("[data-new-task-input]");
 const LOCAL_STORAGE_LIST_KEY = "tasks.list";
 const tasksContainer = document.querySelector("[data-tasks]");
 const listTitleElement = document.querySelector("[data-list-title]");
+const menuElement = document.getElementById("menu");
 let selectedList = (LOCAL_SELECTED_LIST_ID_KEY = "task.selectedListId");
 let lists = JSON.parse(localStorage.getItem(LOCAL_STORAGE_LIST_KEY)) || [];
 let selectedListId = localStorage.getItem(LOCAL_SELECTED_LIST_ID_KEY);
+let toggleFlag = true;
 const tasksTemplate = document.getElementById("tasks-template");
 const listDisplayContainer = document.querySelector(
   "[data-list-display-container]"
 );
+const buttonDarkMode = document.querySelector("#dark-mode");
 
 const newListSubmit = e => {
   e.preventDefault();
@@ -61,6 +64,7 @@ tasksContainer.addEventListener("click", e => {
 
 function myFunction(x) {
   x.classList.toggle("change");
+  menuElement.classList.toggle("change");
 }
 
 let createList = name => {
@@ -139,3 +143,10 @@ function clearElement(element) {
 }
 
 render();
+
+const toggleDarkMode = () => {
+  document.body.classList[toggleFlag ? "add" : "remove"]("dark-mode");
+  toggleFlag = !toggleFlag;
+};
+
+buttonDarkMode.addEventListener("click", toggleDarkMode);
